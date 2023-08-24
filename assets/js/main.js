@@ -32,6 +32,7 @@ btn.addEventListener('click', (e) => {
 
         ticketRebate = ticketPrice * 20 / 100;
         finalPrice =(ticketPrice - ticketRebate).toFixed(2);
+        infoRebate.classList.remove('text-danger');
         infoRebate.classList.add('text-success');
         infoRebate.textContent = 'Lo sconto applicato è del 20%'
         console.log(finalPrice);
@@ -41,6 +42,7 @@ btn.addEventListener('click', (e) => {
         ticketRebate = ticketPrice * 40 / 100;
         finalPrice = (ticketPrice - ticketRebate).toFixed(2);
         console.log(finalPrice);
+        infoRebate.classList.remove('text-danger');
         infoRebate.classList.add('text-success');
         infoRebate.textContent = 'Lo sconto applicato è del 40%'
         console.log(finalPrice);
@@ -49,6 +51,7 @@ btn.addEventListener('click', (e) => {
 
         finalPrice = ticketPrice.toFixed(2);
         console.log(finalPrice);
+        infoRebate.classList.remove('text-success');
         infoRebate.classList.add('text-danger');
         infoRebate.textContent = 'Nessuno sconto è stato applicato'
         console.log(finalPrice);
