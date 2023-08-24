@@ -11,17 +11,19 @@
 
     <div class="container mt-5">
 
-        <div id="user_info" class="text-center">
+        <div id="user_info">
 
-            <h1 class="text-uppercase">calcola il prezzo del tuo biglietto</h1>
+            <h1 class="text-uppercase text-center">calcola il prezzo del tuo biglietto</h1>
 
             <form action="#" class=" bg-white rounded-4 p-4">
 
-                    <div class="d-flex justify-content-center gap-5">
+                <h5 class="text-uppercase border-bottom fw-bold">inserisci opzioni di viaggio</h5>
+
+                    <div class="d-flex justify-content-center gap-5 text-center flex-wrap">
             
                         <div class="input_name">
             
-                            <div>Nome e Cognome</div>
+                            <div class="fw-bold">Nome e Cognome</div>
             
                             <input id="name" type="text" required>
             
@@ -30,7 +32,7 @@
                         
                         <div class="input_km">
                             
-                            <div>Km da percorrere</div>
+                            <div class="fw-bold">Km da percorrere</div>
                             
                             <input id="km" type="text" required>
             
@@ -39,7 +41,7 @@
             
                         <div class="input_age">
             
-                            <div>Fascia d'età</div>
+                            <div class="fw-bold">Fascia d'età</div>
             
                             <select name="age" id="age">
                                 <option value="junior">Minorenne</option>
@@ -53,7 +55,7 @@
                         
                     </div>
                     
-                    <div id="submit" class="mt-4">
+                    <div id="submit" class="text-center mt-4">
         
                         <input type="submit" value="Genera" class="btn btn-success">
                         <input type="reset" value="Annulla" class="btn btn-danger">
@@ -80,7 +82,7 @@
 
             <div class="details bg-white rounded-4 p-4">
 
-                <h4 class="text-uppercase border-bottom">dettaglio passeggeri</h4>
+                <h5 class="text-uppercase border-bottom fw-bold">dettaglio passeggeri</h5>
 
                 <div class="ticket_details">
 
@@ -88,7 +90,7 @@
 
                         <div class="col-4">
 
-                            <div class="text-uppercase">nome passeggero</div>
+                            <div class="text-uppercase fw-bold">nome passeggero</div>
     
                             <div class="user_name"></div>
 
@@ -97,7 +99,7 @@
 
                         <div class="col-2">
 
-                            <div>Offerta</div>
+                            <div class="fw-bold">Offerta</div>
                             <div>Biglietto Standard</div>
 
                         </div>
@@ -105,7 +107,7 @@
 
                         <div class="col-2">
 
-                            <div>Carrozza</div>
+                            <div class="fw-bold">Carrozza</div>
                             <div>5</div>
                             
                         </div>
@@ -113,7 +115,7 @@
 
                         <div class="col-2">
 
-                            <div>Codice CP</div>
+                            <div class="fw-bold">Codice CP</div>
                             <div>92199</div>
 
                         </div>
@@ -121,7 +123,7 @@
 
                         <div class="col-2">
 
-                            <div>Costo biglietto</div>
+                            <div class="fw-bold">Costo biglietto</div>
                             <div class="ticket_price"></div>
 
                         </div>
