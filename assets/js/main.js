@@ -1,16 +1,29 @@
 const userName = document.querySelector('#name').value;
 const kmUserWant = document.querySelector('#km').value;
 const userAge = document.querySelector('#age').value;
-const btn = document.querySelector('#submit');
+const btn = document.querySelector('[type=submit]');
 
 btn.addEventListener('click', () => {
     window.location.reload();
 })
 
+/* btn.addEventListener('click', (e) => {
+    e.preventDefault();
+}) */
+
+/* if (isNaN(kmUserWant)) {
+
+    alert('non hai inserito un numero nella richiesta dei chilometri che vuoi percorrere,per favore inserisci un numero valido');
+    window.location.reload();
+
+} else if (kmUserWant < 1 || kmUserWant > 1500) {
+
+    alert('non hai inserito un numero valido nella richiesta dei chilometri che vuoi percorrere,per favore inserisci un numero compreso tra 1 e 1500');
+    window.location.reload();
+
+} */
+
 console.log(userName,kmUserWant, userAge);
-
-
-
 
 const ticketPrice = kmUserWant * 0.21;
 
