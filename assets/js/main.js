@@ -25,11 +25,15 @@ btn.addEventListener('click', (e) => {
 
     let ticketRebate;
     let finalPrice;
-
+    const infoRebate = document.querySelector('.ticket_rebate');
+    
+    
     if (userAge === 'junior') {
 
         ticketRebate = ticketPrice * 20 / 100;
         finalPrice =(ticketPrice - ticketRebate).toFixed(2);
+        infoRebate.classList.add('text-success');
+        infoRebate.textContent = 'Lo sconto applicato è del 20%'
         console.log(finalPrice);
 
     } else if (userAge === 'senior') {
@@ -37,10 +41,16 @@ btn.addEventListener('click', (e) => {
         ticketRebate = ticketPrice * 40 / 100;
         finalPrice = (ticketPrice - ticketRebate).toFixed(2);
         console.log(finalPrice);
+        infoRebate.classList.add('text-success');
+        infoRebate.textContent = 'Lo sconto applicato è del 40%'
+        console.log(finalPrice);
 
     } else {
 
         finalPrice = ticketPrice.toFixed(2);
+        console.log(finalPrice);
+        infoRebate.classList.add('text-danger');
+        infoRebate.textContent = 'Nessuno sconto è stato applicato'
         console.log(finalPrice);
 
     };
@@ -51,6 +61,7 @@ btn.addEventListener('click', (e) => {
 
     const userTicketPrice = document.querySelector('.ticket_price');
     userTicketPrice.textContent = finalPrice + ' €';
+
 })
 
 btnReset.addEventListener('click', () => {
