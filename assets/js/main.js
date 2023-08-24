@@ -8,6 +8,7 @@ btn.addEventListener('click', (e) => {
     let userName = document.querySelector('#name').value;
     let kmUserWant = document.querySelector('#km').value;
     let userAge = document.querySelector('#age').value;
+
     
     if (isNaN(kmUserWant)) {
 
@@ -64,6 +65,10 @@ btn.addEventListener('click', (e) => {
 
     const userTicketPrice = document.querySelector('.ticket_price');
     userTicketPrice.textContent = finalPrice + ' €';
+
+    const cabElement = document.querySelector('.cab');
+    const numberCab = Math.ceil(Math.random()*8);
+    cabElement.textContent = numberCab;
 
 })
 
