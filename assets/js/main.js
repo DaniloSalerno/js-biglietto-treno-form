@@ -8,17 +8,17 @@ btn.addEventListener('click', (e) => {
     let userName = document.querySelector('#name').value;
     let kmUserWant = document.querySelector('#km').value;
     let userAge = document.querySelector('#age').value;
-
+    const alertElement = document.querySelector('.alert');
     
     if (isNaN(kmUserWant)) {
 
-    alert('non hai inserito un numero nella richiesta dei chilometri che vuoi percorrere,per favore inserisci un numero valido');
-    window.location.reload();
+    alertElement.textContent = 'Non hai inserito un numero nella richiesta dei Km da percorrere,per favore inserisci un numero';
+    return;
 
     } else if (kmUserWant < 1 || kmUserWant > 1500) {
 
-    alert('non hai inserito un numero valido nella richiesta dei chilometri che vuoi percorrere,per favore inserisci un numero compreso tra 1 e 1500');
-    window.location.reload();
+    alertElement.textContent = 'non hai inserito un numero valido nella richiesta dei chilometri che vuoi percorrere,per favore inserisci un numero compreso tra 1 e 1500';
+    return;
 
     } 
 
