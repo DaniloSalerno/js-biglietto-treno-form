@@ -1,7 +1,7 @@
 const userName = document.querySelector('#name').value;
 const kmUserWant = document.querySelector('#km').value;
 const userAge = document.querySelector('#age').value;
-const btn = document.querySelector('button');
+const btn = document.querySelector('#submit');
 
 btn.addEventListener('click', () => {
     window.location.reload();
@@ -41,4 +41,4 @@ const userNameTicket = document.querySelector('.user_name');
 userNameTicket.textContent = userName;
 
 const userTicketPrice = document.querySelector('.ticket_price');
-userTicketPrice.textContent = finalPrice;
+userTicketPrice.textContent = finalPrice + ' €';

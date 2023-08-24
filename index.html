@@ -4,27 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Ticket</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-    <input id="name" type="text">
-    <input id="km" type="text">
-    <select name="age" id="age">
-        <option value="junior">Minorenne</option>
-        <option value="senior">Over 65</option>
-        <option value="other">Altro</option>
-    </select>
-    <button>Click me!</button>
+    <div class="container mt-5">
 
-    <div id="ticket">
-        <div class="container">
-            <div class="user_name"></div>
-            <div class="ticket_price"></div>
+        <div class="user_info text-center">
+
+            <h1 class="text-uppercase">calcola il prezzo del tuo biglietto</h1>
+            
+            <div id="form" class="d-flex justify-content-center gap-5">
+    
+                <div class="input_name">
+    
+                    <div>Nome e Cognome</div>
+    
+                    <input id="name" type="text">
+    
+                </div>
+                <!-- /.input_name -->
+                
+                <div class="input_km">
+                    
+                    <div>Km da percorrere</div>
+                    
+                    <input id="km" type="text">
+    
+                </div>
+                <!-- /.input_km -->
+    
+                <div class="input_age">
+    
+                    <div>Fascia d'età</div>
+    
+                    <select name="age" id="age">
+                        <option value="junior">Minorenne</option>
+                        <option value="senior">Over 65</option>
+                        <option value="other">Altro</option>
+                    </select>
+    
+                </div>
+                <!-- /.input_age -->
+    
+            </div>
+            <!-- /#form -->
+            
+            <div id="submit" class="mt-4">
+
+                <input type="submit">
+                <input type="reset">
+
+            </div>
+            <!-- /#submit -->
+
         </div>
-    </div>
+        <!-- /.user_info -->
 
+    </div>
+    <!-- /.container -->
+
+
+    <div class="container mt-5">
+
+        <div id="ticket">
+
+            <h1 class="text-uppercase text-center">il tuo biglietto</h1>
+
+            <div class="details">
+
+                <h4 class="text-uppercase">dettaglio passeggeri</h4>
+
+                <div class="ticket_details">
+
+                    <div class="row">
+
+                        <div class="col-4">
+
+                            <div class="text-uppercase">nome passeggero</div>
+    
+                            <div class="user_name"></div>
+
+                        </div>
+                        <!-- /.col-4 -->
+
+                        <div class="col-2">
+
+                            <div>Offerta</div>
+                            <div>Biglietto Standard</div>
+
+                        </div>
+                        <!-- /.col-2 -->
+
+                        <div class="col-2">
+
+                            <div>Carrozza</div>
+                            <div>5</div>
+                            
+                        </div>
+                        <!-- /.col-2 -->
+
+                        <div class="col-2">
+
+                            <div>Codice CP</div>
+                            <div>92199</div>
+
+                        </div>
+                        <!-- /.col-2 -->
+
+                        <div class="col-2">
+
+                            <div>Costo biglietto</div>
+                            <div class="ticket_price"></div>
+
+                        </div>
+                        <!-- /.col-2 -->
+                        
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.ticket_details -->
+
+            </div>
+            <!-- /.details -->
+
+        </div>
+        <!-- /#ticket -->
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 </html>
