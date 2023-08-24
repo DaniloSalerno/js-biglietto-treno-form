@@ -20,7 +20,9 @@ btn.addEventListener('click', (e) => {
     alertElement.textContent = 'non hai inserito un numero valido nella richiesta dei chilometri che vuoi percorrere,per favore inserisci un numero compreso tra 1 e 1500';
     return;
 
-    } 
+    } else {
+        alertElement.textContent = ''
+    }
 
     const ticketPrice = kmUserWant * 0.21;
 
