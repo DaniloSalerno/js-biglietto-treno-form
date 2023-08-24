@@ -37,3 +37,8 @@ if (userAge === 'junior') {
 };
 
 
+const userNameTicket = document.querySelector('.user_name');
+userNameTicket.textContent = userName;
+
+const userTicketPrice = document.querySelector('.ticket_price');
+userTicketPrice.textContent = finalPrice;
