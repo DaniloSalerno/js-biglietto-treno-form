@@ -11,11 +11,11 @@
 
     <div class="container mt-5">
 
-        <div class="user_info text-center">
+        <div id="user_info" class="text-center">
 
             <h1 class="text-uppercase">calcola il prezzo del tuo biglietto</h1>
 
-            <form action="#">
+            <form action="#" class=" bg-white rounded-4 p-4">
 
                     <div class="d-flex justify-content-center gap-5">
             
@@ -23,7 +23,7 @@
             
                             <div>Nome e Cognome</div>
             
-                            <input id="name" type="text">
+                            <input id="name" type="text" required>
             
                         </div>
                         <!-- /.input_name -->
@@ -32,7 +32,7 @@
                             
                             <div>Km da percorrere</div>
                             
-                            <input id="km" type="text">
+                            <input id="km" type="text" required>
             
                         </div>
                         <!-- /.input_km -->
@@ -55,8 +55,8 @@
                     
                     <div id="submit" class="mt-4">
         
-                        <input type="submit">
-                        <input type="reset">
+                        <input type="submit" value="Genera" class="btn btn-success">
+                        <input type="reset" value="Annulla" class="btn btn-danger">
         
                     </div>
                     <!-- /#submit -->
@@ -66,7 +66,7 @@
             
 
         </div>
-        <!-- /.user_info -->
+        <!-- /#user_info -->
 
     </div>
     <!-- /.container -->
@@ -78,9 +78,9 @@
 
             <h1 class="text-uppercase text-center">il tuo biglietto</h1>
 
-            <div class="details">
+            <div class="details bg-white rounded-4 p-4">
 
-                <h4 class="text-uppercase">dettaglio passeggeri</h4>
+                <h4 class="text-uppercase border-bottom">dettaglio passeggeri</h4>
 
                 <div class="ticket_details">
 

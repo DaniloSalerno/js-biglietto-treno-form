@@ -1,9 +1,10 @@
 const btn = document.querySelector('[type=submit]');
+const btnReset = document.querySelector('[type=reset]');
 
 btn.addEventListener('click', (e) => {
 
     e.preventDefault();
-    
+
     let userName = document.querySelector('#name').value;
     let kmUserWant = document.querySelector('#km').value;
     let userAge = document.querySelector('#age').value;
@@ -52,16 +53,8 @@ btn.addEventListener('click', (e) => {
     userTicketPrice.textContent = finalPrice + ' €';
 })
 
-/* if (isNaN(kmUserWant)) {
-
-    alert('non hai inserito un numero nella richiesta dei chilometri che vuoi percorrere,per favore inserisci un numero valido');
+btnReset.addEventListener('click', () => {
     window.location.reload();
-
-} else if (kmUserWant < 1 || kmUserWant > 1500) {
-
-    alert('non hai inserito un numero valido nella richiesta dei chilometri che vuoi percorrere,per favore inserisci un numero compreso tra 1 e 1500');
-    window.location.reload();
-
-} */
+})
 
 
